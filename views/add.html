@@ -1,0 +1,39 @@
+<div class="page-header">
+    <h1>Dodaj kontakt</h1>
+</div>
+<form ng-submit="submit()">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="name" class="control-label">Imię i nazwisko</label>
+                <input type="text" id="name" class="form-control" ng-model="contact.name" />
+            </div>
+            <div class="form-group">
+                <label for="email" class="control-label">Adres email</label>
+                <input type="email" id="email" class="form-control" ng-model="contact.email" />
+            </div>
+            <div class="form-group">
+                <label for="phone" class="control-label">Numer telefonu</label>
+                <input type="tel" id="phone" class="form-control" ng-model="contact.phone" />
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="form-group">
+                <label for="address" class="control-label">Adres</label>
+                <textarea id="address" class="form-control" ng-model="contact.address"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="www" class="control-label">Strona WWW</label>
+                <input type="text" id="www" class="form-control" ng-model="contact.website" />
+            </div>
+            <div class="form-group">
+                <label for="notes" class="control-label">Uwagi</label>
+                <textarea id="notes" class="form-control" ng-model="contact.notes" bs-tooltip data-title="Pomocnicze informacje o kontakcie" data-trigger="focus" data-placement="bottom"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="form-group well">
+        <input type="submit" class="btn btn-success center-block" value="Dodaj kontakt" />
+    </div>
+</form>
+<div id="alertContainer"></div>
